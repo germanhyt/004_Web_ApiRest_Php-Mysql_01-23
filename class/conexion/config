@@ -1,0 +1,9 @@
+{
+    "conexion":{
+        "server" : "localhost",
+        "user" : "postgres",
+        "password" : "admin",
+        "database" : "compusama",
+        "port": "5432"
+    }
+}

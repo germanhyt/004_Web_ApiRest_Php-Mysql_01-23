@@ -119,7 +119,6 @@ class Products extends Conexion
     }
 
 
-    //Método insertar paciente
     private function insertarProduct()
     {
         $query = "INSERT INTO " . $this->table . " (description,price,categoryid,created_at,updated_at.imagen)
@@ -250,7 +249,7 @@ class Products extends Conexion
             return 0;
         }
     }
-    
+
     private function actualizarToken($tokenid)
     {
         $date = date("Y-m-d H:i");

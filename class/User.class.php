@@ -99,6 +99,7 @@ class User extends Conexion
                     return $_responses->error_400();
                 } else {
                     $this->id = $datos['id'];
+                    date_default_timezone_set('America/Lima');
                     $this->updated_at = date("Y-m-d H:i");
                     if (isset($datos['name'])) {
                         $this->name = $datos['name'];

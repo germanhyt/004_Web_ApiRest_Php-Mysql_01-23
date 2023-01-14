@@ -35,7 +35,6 @@ class User extends Conexion
     }
 
 
-
     public function post($json)
     {
         $_responses = new respuestas;

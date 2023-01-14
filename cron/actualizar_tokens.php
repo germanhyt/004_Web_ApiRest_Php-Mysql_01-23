@@ -3,5 +3,4 @@
     $_token = new token;
     date_default_timezone_set('America/Lima');
     $fecha = date('Y-m-d H:i');
-    echo $_token->actualizarTokens($fecha);
-?>
+    echo "Archivo modificados: ".$_token->actualizarTokens($fecha);

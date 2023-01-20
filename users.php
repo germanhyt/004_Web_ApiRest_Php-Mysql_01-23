@@ -1,12 +1,22 @@
 <?php
 require_once 'class/Respuestas.class.php';
 require_once 'class/User.class.php';
+// header("Access-Control-Allow-Origin: *");  
+// header("Access-Control-Allow-Methods: *");  
+// header("Access-Control-Allow-Headers: *");
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+header("Allow: GET, POST, OPTIONS, PUT, DELETE");
+
+
 
 $_responses = new respuestas;
-$_users = new User;
+// $_users = new User;
 
 
 if ($_SERVER['REQUEST_METHOD'] == "GET") {
+  $_users = new User;
   if (isset($_GET['page'])) {
     $page = $_GET['page'];
     $listUsers = $_users->listarUsers($page);
@@ -23,6 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
     http_response_code(200);
   }
 } else if ($_SERVER['REQUEST_METHOD'] == "POST") {
+  $_users = new User;
   $postBody = file_get_contents("php://input");
   $datosArray = $_users->post($postBody);
   header("Content-Type: application/json");
@@ -36,6 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
   } 
   echo json_encode($datosArray);
 } else if ($_SERVER['REQUEST_METHOD'] == "PUT") {
+  $_users = new User;
   $postBody = file_get_contents("php://input");
   $datosArray = $_users->put($postBody);
   header("Content-Type:application/json");
@@ -47,6 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
   }
   echo json_encode($datosArray);
 }else if($_SERVER['REQUEST_METHOD']=="DELETE"){
+  $_users = new User;
   $headers=getallheaders();
   if(isset($headers['token'])&&isset($headers['id'])){
     $send=[

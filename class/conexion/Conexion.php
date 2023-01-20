@@ -58,7 +58,7 @@ class Conexion
     {
 
         $results = pg_fetch_all(pg_query($this->conexion, $sqlstr));
-        print_r($results);
+        // print_r($results);
 
         return $this->convertirUTF8($results);
     }

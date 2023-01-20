@@ -2,7 +2,6 @@
 require_once "conexion/Conexion.php";
 require_once "Respuestas.class.php";
 
-
 class User extends Conexion
 {
 
@@ -28,7 +27,7 @@ class User extends Conexion
             $inicio = ($cantidad * ($pagina - 1) + 1);
             $cantidad = $cantidad * $pagina;
         }
-        $query = "SELECT id,name,lastname,email,phone FROM " . $this->table . " LIMIT $cantidad OFFSET $inicio";
+        $query = "SELECT id,name,lastname,email,phone,image,state FROM " . $this->table . " LIMIT $cantidad OFFSET $inicio";
         $datos = parent::obtenerDatos($query);
 
         return $datos;

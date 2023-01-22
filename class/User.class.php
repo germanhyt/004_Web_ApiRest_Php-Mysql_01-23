@@ -202,6 +202,7 @@ class User extends Conexion
     private function processimage($img)
     {
         $direccion = dirname(__DIR__) . "\public\images\\"; //direccion
+        // $direccion = "../public/images/"; //direccion
 
         $partes = explode(";base64", $img);
         $extension = explode('/', mime_content_type($img))[1];

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API - Test - Ecommerce</title>
+    <title>API - Test</title>
     <link rel="stylesheet" href="assets/styles.css" type="text/css">
 </head>
 
@@ -42,7 +42,7 @@
                 <br>
                 "name" : "", -> REQUERIDO
                 <br>
-                "lastname" : "", 
+                "lastname" : "",
                 <br>
                 "email":"", -> REQUERIDO
                 <br>

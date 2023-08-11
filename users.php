@@ -15,13 +15,15 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
   $_users = new User;
   if (isset($_GET['page'])) {
     $page = $_GET['page'];
-    $listUsers = $_users->listarUsers($page);
 
+    $listUsers = $_users->listarUsers($page);
+    
     header("Content-Type: application/json");
     echo json_encode($listUsers);
     http_response_code(200);
   } else if (isset($_GET['id'])) {
     $userid = $_GET['id'];
+
     $datosUsers = $_users->obtenerUser($userid);
 
     header("Content-Type: application/json");

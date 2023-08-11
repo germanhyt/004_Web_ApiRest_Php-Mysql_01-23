@@ -1,9 +1,0 @@
-{
-    "conexion":{
-        "server" : "localhost",
-        "user" : "postgres",
-        "password" : "admin",
-        "database" : "db_users_restapi",
-        "port": "5432"
-    }
-}

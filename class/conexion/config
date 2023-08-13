@@ -2,7 +2,7 @@
     "conexion":{
         "server" : "sql108.byethost7.com",
         "user" : "b7_34312610",
-        "password" : "9R0PD4S9",
+        "password" : "",
         "database" : "b7_34312610_apirest_php_mysql",
         "port": "3306"
     }

@@ -16,7 +16,7 @@ En este proyecto, se tiene una plantilla y modelo de Api Rest Full.
 - Html
 
 ## Despliegue
-- En byethost7: http://shermandeploy.byethost7.com/Backend_Apirest_PHP_users/users?page=1
+- En byethost7: http://shermandeploy.byethost7.com/7_2_pos_venta_prod/
 
 
 ![Tecnologías](https://shareurcodes.com/photos//rest-api.jpg)

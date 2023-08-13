@@ -1,9 +1,9 @@
 {
     "conexion":{
-        "server" : "localhost",
-        "user" : "root",
-        "password" : "",
-        "database" : "apirest_php_mysql",
+        "server" : "sql108.byethost7.com",
+        "user" : "b7_34312610",
+        "password" : "9R0PD4S9",
+        "database" : "b7_34312610_apirest_php_mysql",
         "port": "3306"
     }
 }
